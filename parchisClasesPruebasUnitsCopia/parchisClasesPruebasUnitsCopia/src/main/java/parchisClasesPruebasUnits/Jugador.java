@@ -54,9 +54,9 @@ public class Jugador {
 		
 	}
 	
-	public void moverFicha(int cs) {
+	public void moverFicha(int css) {
 		
-		ficha.mover(cs);
+		ficha.mover(css);
 		
 		
 	}
