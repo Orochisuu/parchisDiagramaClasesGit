@@ -15,7 +15,8 @@ public class Juego {
 		
 		Tablero tablero = new Tablero();
 		Dado dado1 = new Dado();
-		Jugador yo = new Jugador("Angel", tablero);
+	
+		Jugador yo = new Jugador("Angel", tablero,"rojo");
 		
 		do {
 
@@ -42,7 +43,7 @@ public class Juego {
 			
 			System.out.println("La ficha esta en la casilla "+yo.consultarTablero());
 
-		} while (yo.consultarTablero() < 20);
+		} while (yo.consultarTablero() < tablero.consultarNumCasillas());
 
 		System.out.println("Fin del juego");
 

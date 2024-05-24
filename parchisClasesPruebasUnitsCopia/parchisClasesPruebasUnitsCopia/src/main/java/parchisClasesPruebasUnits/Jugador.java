@@ -11,10 +11,13 @@ public class Jugador {
 	private String nombre;
 	private Tablero tablero;
 	
-	public Jugador(String nombre, Tablero tablero) {
+	private String color;
+	
+	public Jugador(String nombre, Tablero tablero,String color) {
 		
 		this.nombre = nombre;
 		this.tablero = tablero;
+		this.color=color;
 		
 	}
 	
@@ -53,8 +56,7 @@ public class Jugador {
 	
 	public void moverFicha(int cs) {
 		
-		int origen = consultarTablero();
-		tablero.cambiarFicha(origen, origen+cs);;
+		ficha.mover(cs);
 		
 	}
 	
